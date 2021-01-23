@@ -20,7 +20,7 @@ def clear():
 clear()
 
 # flavor text for program opening, as well as options
-print('Welcome to WGUPS!  This is the WGU Package Delivery System')
+print('Welcome to the Package Delivery System Console')
 print('Packages have been delivered!  All packages were delivered in {} miles'.format(total_distance))
 
 while True:

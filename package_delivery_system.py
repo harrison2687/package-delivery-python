@@ -19,7 +19,7 @@ class PackageDelivery(object):
         packages_hash = HashTable(40)
 
         # opening and reading the location data from csv, then populating a hash table and graph with location data
-        with open('WGUDistanceNameData.csv') as csvfile:
+        with open('DistanceNameData.csv') as csvfile:
             location_data = csv.reader(csvfile)
 
             # looping through location data -> O(n) complexity
@@ -37,7 +37,7 @@ class PackageDelivery(object):
         high_priority = []
         low_priority = []
 
-        with open('WGUInputData.csv') as csvfile:
+        with open('InputData.csv') as csvfile:
             package_data = csv.reader(csvfile)
 
             for data_row in package_data:
@@ -54,7 +54,7 @@ class PackageDelivery(object):
                     low_priority.append(package)
 
         # edge-creation between graph vertices
-        with open('WGUDistanceData.csv') as csvfile:
+        with open('DistanceData.csv') as csvfile:
             distance_data = csv.reader(csvfile)
 
             # looping through csv file -> O(n^2) complexity
